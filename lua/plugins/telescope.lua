@@ -8,4 +8,7 @@ return {
 		vim.keymap.set("n", "<leader>fg", builtin.live_grep, {})
 		vim.keymap.set("n", "<leader>fb", builtin.buffers, {})
 	end,
+	defaults = {
+		file_ignore_patterns = { "node_modules" },
+	},
 }

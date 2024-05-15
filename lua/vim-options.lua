@@ -10,5 +10,10 @@ vim.opt.ignorecase = true
 vim.opt.smartcase = true
 vim.opt.cursorline = true
 vim.opt.clipboard:append("unnamedplus") -- use sytem clipboard
-vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])
+-- Enable break indent
+vim.opt.breakindent = true
 
+-- Save undo history
+vim.opt.undofile = true
+
+vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])
